@@ -1,0 +1,20 @@
+
+
+# Environment
+.env
+.env.local
+.env.production
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker volumes / overrides
+docker-compose.override.yml
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
