@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white font-semibold px-5 py-2.5 rounded-lg shadow-btn hover:bg-primary-700 transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed;
+  }
+  .btn-outline {
+    @apply border-2 border-primary text-primary font-semibold px-5 py-2.5 rounded-lg hover:bg-primary hover:text-white transition-all duration-200;
+  }
+  .btn-accent {
+    @apply bg-accent text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-orange-700 transition-all duration-200;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-card border border-kigezi-border;
+  }
+  .input-field {
+    @apply w-full border border-kigezi-border rounded-lg px-3.5 py-2.5 text-kigezi-text placeholder:text-kigezi-muted focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary transition-all;
+  }
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold;
+  }
+  .page-wrapper {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .section-title {
+    @apply font-serif text-3xl font-bold text-kigezi-text;
+  }
+  .section-subtitle {
+    @apply text-kigezi-muted mt-2;
+  }
+  .shadow-card {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+  .shadow-btn {
+    box-shadow: 0 2px 8px rgba(45, 106, 79, 0.25);
+  }
+}
